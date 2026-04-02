@@ -1,22 +1,14 @@
 [
   {
-    "content": "Backend: Add /api/check-cert and /api/change-cert-password endpoints + cert_tools.py",
-    "status": "completed"
-  },
-  {
-    "content": "Frontend: React app with 4 pages (Home, SignIPA, CheckCert, CertPass) + glass navbar",
-    "status": "completed"
-  },
-  {
-    "content": "Create DEPLOY.md for Vercel + Render",
-    "status": "completed"
-  },
-  {
     "content": "End-to-end testing with testing agent",
-    "status": "in_progress"
+    "status": "completed"
   },
   {
     "content": "Fix any issues found in testing",
-    "status": "pending"
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: All user stories covered in development and testing",
+    "status": "completed"
   }
 ]
