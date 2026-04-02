@@ -41,9 +41,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Config ──────────────────────────────────────────────────────────────────
-MONGO_URL         = os.environ.get("MONGO_URL", "mongodb://localhost:27017")
-DB_NAME           = os.environ.get("DB_NAME", "ios_signtool")
-PUBLIC_BASE_URL   = os.environ.get("PUBLIC_BASE_URL", "http://localhost:8001")
+MONGO_URL         = os.environ.get("MONGO_URL", "mongodb+srv://Astear17:Astear17!@astear17.ivwcsvd.mongodb.net/?appName=Astear17")
+DB_NAME           = os.environ.get("DB_NAME", "ipa_signer")
+PUBLIC_BASE_URL   = os.environ.get("PUBLIC_BASE_URL", "https://ipa-signer-backend.onrender.com/")
 ZSIGN_PATH        = os.environ.get("ZSIGN_PATH", "/usr/local/bin/zsign")
 JOBS_DIR          = Path("/tmp/ipa_signer_jobs")
 JOBS_DIR.mkdir(parents=True, exist_ok=True)
@@ -63,7 +63,7 @@ APP_LIBRARY = [
         "name": "Feather",
         "version": "v2.5.0",
         "description": "Open-source on-device signer with tweak injection & AltStore repo support.",
-        "ipa_url": "https://github.com/khcrysalis/Feather/releases/download/v2.5.0/Feather-default.ipa",
+        "ipa_url": "https://github.com/CLARATION/Feather/releases/download/v2.6.0/Feather.ipa",
         "website": "https://github.com/khcrysalis/Feather",
         "color": "#22D3EE",
         "features": ["iOS 16+"],
