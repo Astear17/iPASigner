@@ -1,26 +1,22 @@
 [
   {
-    "content": "POC: Test P12 parsing + mobileprovision parsing + password change in Python",
+    "content": "Backend: Add /api/check-cert and /api/change-cert-password endpoints + cert_tools.py",
     "status": "completed"
   },
   {
-    "content": "Design: Get design guidelines from design agent",
-    "status": "in_progress"
-  },
-  {
-    "content": "Backend: Add /api/check-cert and /api/change-cert-password endpoints + cert_tools.py",
-    "status": "pending"
-  },
-  {
     "content": "Frontend: React app with 4 pages (Home, SignIPA, CheckCert, CertPass) + glass navbar",
-    "status": "pending"
+    "status": "completed"
   },
   {
     "content": "Create DEPLOY.md for Vercel + Render",
-    "status": "pending"
+    "status": "completed"
   },
   {
     "content": "End-to-end testing with testing agent",
+    "status": "in_progress"
+  },
+  {
+    "content": "Fix any issues found in testing",
     "status": "pending"
   }
 ]

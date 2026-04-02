@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: ios-signtool-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGO_URL
+        sync: false          # paste your MongoDB Atlas connection string
+      - key: DB_NAME
+        value: ios_signtool
+      - key: PUBLIC_BASE_URL
+        sync: false          # paste your Render service URL after first deploy
+      - key: ZSIGN_PATH
+        value: /usr/local/bin/zsign
+      - key: JOB_TTL_SECONDS
+        value: 1800
+      - key: MAX_FILE_SIZE_MB
+        value: 500
+      - key: ZSIGN_TIMEOUT
+        value: 300
+      - key: CLEANUP_INTERVAL
+        value: 300
+      - key: MAX_CONCURRENT_JOBS
+        value: 5
