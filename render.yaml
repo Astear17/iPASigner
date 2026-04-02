@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ios-signtool-backend
+    name: ipa_signer
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
@@ -9,11 +9,11 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: MONGO_URL
-        sync: false          # paste your MongoDB Atlas connection string
+        value: mongodb+srv://Astear17:Astear17!@astear17.ivwcsvd.mongodb.net/?appName=Astear17
       - key: DB_NAME
-        value: ios_signtool
+        value: ipa_signer
       - key: PUBLIC_BASE_URL
-        sync: false          # paste your Render service URL after first deploy
+        value: https://ipa-signer-backend.onrender.com
       - key: ZSIGN_PATH
         value: /usr/local/bin/zsign
       - key: JOB_TTL_SECONDS
