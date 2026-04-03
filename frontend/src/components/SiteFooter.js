@@ -23,7 +23,7 @@ export default function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             className="font-bold transition-colors"
-            style={{ color: ‘hsl(190 85% 52%)’ }}
+            style={{ color: 'hsl(190 85% 52%)' }}
           >
             Khơindvn
           </a>
